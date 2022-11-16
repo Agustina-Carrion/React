@@ -4,8 +4,8 @@ import Image2 from "./2.png";
 function ContentBody() {
   return (
     <>
-      <div class="hero-body">
-        <div class="content px-4 py-4">
+      <div className="hero-body">
+        <div className="content px-4 py-4">
           <h1>Tina's Travel Blog</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -45,19 +45,19 @@ function ContentBody() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <div class="columns">
-            <div class="column center">
-              <figure class="images">
+          <div className="columns">
+            <div className="column center">
+              <figure className="images">
                 <img src={Image1} alt="" />
               </figure>
             </div>
-            <div class="column center">
-              <figure class="images">
+            <div className="column center">
+              <figure className="images">
                 <img src={Image2} alt="" />
               </figure>
             </div>
           </div>
-          <figcaption class="center" id="imagesSubtext">
+          <figcaption className="center" id="imagesSubtext">
             Figure 1: Some pictures from my trips!
           </figcaption>
         </div>
