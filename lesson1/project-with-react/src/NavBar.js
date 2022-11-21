@@ -6,6 +6,7 @@ import {
   FaInstagram,
   FaTwitter,
 } from "react-icons/fa";
+import MenuItems from "./MenuItems";
 
 function NavBar() {
   return (
@@ -19,7 +20,8 @@ function NavBar() {
               </a>
             </div>
           </div>
-          <div className="column center">
+          <MenuItems />
+          {/* <div className="column center">
             <div id="navbar" className="navbar-menu">
               <a className="navbar-item is-active" href="info-page.html">
                 {" "}
@@ -50,7 +52,7 @@ function NavBar() {
                 Edit Page{" "}
               </a>
             </div>
-          </div>
+          </div> */}
           <div className="column right is-flex is-justify-content-flex-end">
             <div className="navbar-item desktop">
               <span className="icon">
