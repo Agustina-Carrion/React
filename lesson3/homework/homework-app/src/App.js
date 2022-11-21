@@ -38,7 +38,6 @@ function App() {
           <ul className="flex flex-col gap-2 font-semibold">
             {menu.map((menuItem) => (
               <MenuItem
-                key={menuItem.text}
                 text={menuItem.text}
                 target={menuItem.target}
                 count={menuItem.count}
