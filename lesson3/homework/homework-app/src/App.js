@@ -1,8 +1,17 @@
 import "./App.css";
 import Greeting from "./Greeting";
 import Farewell from "./Farewell";
+import MenuItem from "./MenuItem";
 
 function App() {
+  const messageCounter = 25;
+
+  const menu = [
+    { text: "Home", target: "#home" },
+    { text: "Inbox", target: "#inbox", count: messageCounter },
+    { text: "About Me", target: "#about" },
+  ];
+
   return (
     <main className="flex flex-col w-full h-full">
       <header className="w-full bg-gray-100 border-b border-slate-400 h-16 flex items-center px-4 justify-between">
@@ -20,39 +29,28 @@ function App() {
             ></path>
           </svg>
           <span className="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">
-            <UnreadEmails number="25" />
+            {messageCounter}
           </span>
         </span>
       </header>
       <div className="flex h-full">
         <aside className="w-1/4 h-full border-slate-400 border-r p-4">
           <ul className="flex flex-col gap-2 font-semibold">
-            <li>
-              <a className="text-slate-700 hover:text-slate-900" href="#">
-                Home
-              </a>
-            </li>
-            <li>
-              <a className="text-slate-700 hover:text-slate-900" href="#">
-                About me
-              </a>
-            </li>
-            <li>
-              <a className="text-slate-700 hover:text-slate-900" href="#">
-                Inbox
-              </a>
-            </li>
+            {menu.map((menuItem) => (
+              <MenuItem
+                key={menuItem.text}
+                text={menuItem.text}
+                target={menuItem.target}
+                count={menuItem.count}
+              />
+            ))}
           </ul>
         </aside>
         <article className="p-4">
           <Greeting name="Agustina" />
           <br />
           <br />
-          you have{" "}
-          <strong>
-            <UnreadEmails number="25" />
-          </strong>{" "}
-          unread messages.
+          you have <strong>{messageCounter}</strong> unread messages.
           <br />
           <br />
           Please go to your inbox to read them.
@@ -68,4 +66,3 @@ function App() {
 }
 
 export default App;
-
