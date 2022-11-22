@@ -1,4 +1,4 @@
-function MenuItem(text, target, count) {
+function MenuItem({text, target, count}) {
   return (
     <li>
       <a className="text-slate-700 hover:text-slate-900" href={target}>

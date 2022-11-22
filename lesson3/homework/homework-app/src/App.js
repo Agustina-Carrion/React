@@ -4,7 +4,7 @@ import Farewell from "./Farewell";
 import MenuItem from "./MenuItem";
 
 function App() {
-  const messageCounter = 25;
+  const messageCounter = 20;
 
   const menu = [
     { text: "Home", target: "#home" },
