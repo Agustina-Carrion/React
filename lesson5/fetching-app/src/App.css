@@ -4,6 +4,12 @@ body {
   background: #f2f2f2;
 }
 
+button{
+  width: 150px;
+  height: 25px;
+  margin: 50px;
+}
+
 .container  {
   position: absolute;
   left: 50%;
