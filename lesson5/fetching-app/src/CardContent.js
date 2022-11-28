@@ -1,8 +1,10 @@
-function CardContent({ pokeList }) {
+function CardContent({ myPokemon }) {
   return (
     <div class="content">
-      <h1>{pokeList}</h1>
-      <h3>This is a struggle!</h3>
+      <h1>{myPokemon.name}</h1>
+      <span>{myPokemon.id}</span>
+      <img src={myPokemon.sprites?.front_default} alt="" />
+      <h3>I choose you!</h3>
     </div>
   );
 }
