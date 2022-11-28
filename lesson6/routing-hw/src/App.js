@@ -1,10 +1,11 @@
 import PokemonCard from "./PokemonCard";
-import { Route } from "wouter";
+import { Link, Route } from "wouter";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
+      <Link href="/pokemon/8"> Some pokemon </Link>
       <Route path="/pokemon/:id">
         {(params) => <PokemonCard myPokemonID={params.id} />}
       </Route>
