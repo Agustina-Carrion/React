@@ -26,6 +26,7 @@ function App() {
 
       <Route path="/pokemon/:id">
         {(params) => <p> Pokemon Number {params.id} </p>}
+        {/* {(params) => <CardContent myPokemonID={params.id} />} */}
       </Route>
 
       <div class="container">
