@@ -7,13 +7,12 @@ function App() {
     <div className="App">
       <Link href="/pokemon/8"> Some pokemon </Link>
       <Route path="/pokemon/:id">
-        {(params) => <PokemonCard myPokemonID={params.id} />}
+        {(params) => (
+          <div className="container">
+            <PokemonCard myPokemonID={params.id} /> <div className="flap"></div>
+          </div>
+        )}
       </Route>
-
-      <div className="container">
-        {/* <CardContent myPokemon={myPokemon} /> */}
-        <div className="flap"></div>
-      </div>
     </div>
   );
 }
