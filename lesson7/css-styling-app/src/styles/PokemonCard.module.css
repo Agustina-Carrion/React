@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  width: 500px;
+  background: #f2f2f2;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+  margin: 30px;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  text-align: justify;
+  color: black;
+  padding: 40px;
+  font-family: "Merriweather", serif;
+}
+
+.container h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.container h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.container img {
+  width: 300px;
+}
